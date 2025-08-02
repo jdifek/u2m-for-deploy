@@ -41,16 +41,15 @@ export default function ClientLayout({
             refreshToken: res.refreshToken,
           })
           console.log('Success login:', res)
-  
-          // ✅ Убираем второй push, потому что useVisitRedirect уже делает redirect
-          // router.push(`${locale}/selling-classifieds`)
-  
         } catch (error: any) {
           console.error('Login error:', error)
           setError(error.response?.data?.error || 'Failed to login')
         } finally {
-          setIsLoading(false)
+          setIsLoading(false) // ✅ всегда сбрасываем
         }
+      } else {
+        // ✅ если не develop, тоже сбрасываем isLoading
+        setIsLoading(false)
       }
     }
   
