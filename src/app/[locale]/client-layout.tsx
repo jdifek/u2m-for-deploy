@@ -23,42 +23,40 @@ export default function ClientLayout({
 	const locale = useLocale()
 	const [error, setError] = useState<string | null>(null)
 
-	useEffect(() => {
-		const checkLogin = async () => {
-			if (authUser) return
-
-			setIsLoading(true)
-
-			if (process.env.NEXT_PUBLIC_ENVIRONMENT_URL === 'develop' && !authUser) {
-				console.log(
-					'Attempting to login with environment:',
-					process.env.NEXT_PUBLIC_ENVIRONMENT_URL,
-					'API_URL:',
-					process.env.NEXT_PUBLIC_API_URL
-				)
-				try {
-					const res = await authService.login({
-						email: 'user@user.com',
-						password: '1234qwer',
-					})
-					handleAuthSuccess({
-						user: res.user,
-						accessToken: res.accessToken,
-						refreshToken: res.refreshToken,
-					})
-					console.log('Success login:', res)
-					if (pathname === `/${locale}` || pathname === '/') {
-						router.push(`${locale}/selling-classifieds`)
-					}
-				} catch (error: any) {
-					console.error('Login error:', error)
-					setError(error.response?.data?.error || 'Failed to login')
-					setIsLoading(false)
-				}
-			}
-		}
-		checkLogin()
-	}, [authUser, isLoading, handleAuthSuccess, router])
+  useEffect(() => {
+    const checkLogin = async () => {
+      if (authUser) return
+  
+      setIsLoading(true)
+  
+      if (process.env.NEXT_PUBLIC_ENVIRONMENT_URL === 'develop') {
+        try {
+          const res = await authService.login({
+            email: 'user@user.com',
+            password: '1234qwer',
+          })
+          handleAuthSuccess({
+            user: res.user,
+            accessToken: res.accessToken,
+            refreshToken: res.refreshToken,
+          })
+          console.log('Success login:', res)
+  
+          // ✅ Убираем второй push, потому что useVisitRedirect уже делает redirect
+          // router.push(`${locale}/selling-classifieds`)
+  
+        } catch (error: any) {
+          console.error('Login error:', error)
+          setError(error.response?.data?.error || 'Failed to login')
+        } finally {
+          setIsLoading(false)
+        }
+      }
+    }
+  
+    checkLogin()
+  }, [authUser, handleAuthSuccess])
+  
 
 	if (isLoading || !shouldRender) {
 		return (
