@@ -1,0 +1,707 @@
+{
+	"Home": {
+		"title1": "Hi there,",
+		"title2": "I’m U2M Space",
+		"description1": "Your new simpler, reliable way",
+		"description2": "to exchange.",
+		"benefit1": "Give your things a second life",
+		"benefit2": "We help to find each other",
+		"benefit3": "Fast communication for exchange or sale"
+	},
+
+	"SellingClassifieds": {
+		"tabs": {
+			"selling": "Selling",
+			"bidding": "Bidding",
+			"barter": "Barter"
+		}
+	},
+
+	"Classified": {
+		"similarOffers": "Similar offers",
+		"userButtons": {
+			"sendMessage": "Send message",
+			"safeBuy/deal": "Safe buy/deal",
+			"tr": "tr",
+			"trustRating": "Trust rating"
+		},
+		"loginToView": "Log in to view"
+	},
+
+	"MyClassifieds": {
+		"tabs": {
+			"all": "All",
+			"active": "Active",
+			"hide": "Hide",
+			"onReview": "On review"
+		},
+		"buttons": {
+			"myClassifieds": "My Classifieds",
+			"review": "Review",
+			"favorites": "Favorites",
+			"payment": "Payment",
+			"profile": "Profile",
+			"logout": "Logout",
+			"addClassifieds": "Add Classifieds",
+			"show": "show",
+			"hide": "hide",
+			"edit": "edit",
+			"up": "up"
+		}
+	},
+
+	"CreateEditClassified": {
+		"addPhotos": "Add photos",
+		"tags": "Tags",
+		"addTag": "Add tag",
+		"recommendedTags": "Recommended tags",
+		"setTheMain": "Set the main",
+		"delete": "Delete",
+		"formInputs": {
+			"title": "Title",
+			"description": "Description",
+			"price": "Price"
+		},
+		"errorInputs": {
+			"title": {
+				"message": "Title must be up to 60 characters",
+				"required": "Title is required"
+			},
+			"description": {
+				"message": "Description must be up to 300 characters",
+				"required": "Description is required"
+			},
+			"price": {
+				"required": "Price is required",
+				"message1": "Price must be a positive number",
+				"message2": "Price must be a valid number",
+				"message3": "Failed to load currency rates"
+			}
+		},
+		"tooltips": {
+			"title": {
+				"name": "Title",
+				"description": "The headline of your ad that users see in search or on the page. It should be short and clear."
+			},
+
+			"description": {
+				"name": "Description",
+				"description": "A short description of the ad. Explains what the ad is about and encourages the user to purchase or trade."
+			},
+			"price": {
+				"name": "Price",
+				"description": "Set a competitive price for your item (must be a positive number)."
+			}
+		}
+	},
+
+	"Favorites": {
+		"tabs": {
+			"all": "All",
+			"selling": "Selling",
+			"bidding": "Bidding",
+			"barter": "Barter"
+		}
+	},
+
+	"Profile": {
+		"tabs": {
+			"information": "Information",
+			"setting": "Setting",
+			"rules": "Rules"
+		},
+		"bonuses": "Bonuses",
+		"trustRating": "Trust rating",
+		"informationTooltips": {
+			"nickname": {
+				"name": "Nickname",
+				"description": "The nickname that will be displayed on the site must be unique. The length must be more than 4 characters."
+			},
+			"legalName": {
+				"name": "Legal name",
+				"description": "Name indicated on the passport, driver’s license or other travel document. Will not be displayed on the site."
+			},
+			"legalSurname": {
+				"name": "Legal surname",
+				"description": "Surname as indicated on official documents such as a passport or ID. Will not be visible on the site."
+			},
+			"gender": {
+				"name": "Gender",
+				"description": "Select your gender as indicated in your official documents. This information will be used for verification purposes."
+			},
+			"dateOfBirth": {
+				"name": "Date of Birth",
+				"description": "Enter your date of birth as stated in your passport or ID. Must be 18 years or older to register."
+			},
+			"email": {
+				"name": "Email Address",
+				"description": "A valid email address that will be used for login and notifications. Must be accessible to confirm your account."
+			},
+			"phoneNumber": {
+				"name": "Phone number",
+				"description": "Primary contact number with country code. Will be used for verification and important account notifications."
+			},
+			"extraPhoneNumber": {
+				"name": "Extra phone number",
+				"description": "Optional additional contact number in case we can't reach you via your primary number."
+			}
+		},
+		"informationFormInputs": {
+			"yourNickname": "Your nickname",
+			"errorNickname": "More than 3 characters are needed",
+			"errorNicknameRequired": "Nickname is required",
+			"infoNickname": "Your nickname (Shown instead of Full Name)",
+			"documentName": "Document Name",
+			"documentNameDescr": "Name indicated on the passport, driver’s license or other travel document.",
+			"legalName": "Legal name",
+			"legalSurname": "Legal surname",
+			"gender": "Gender",
+			"male": "Male",
+			"female": "Female",
+			"birthday": "Date of Birth",
+			"emailAddress": "Email Address",
+			"errorEmailRequired": "Email is required",
+			"errorEmail": "Invalid email format",
+			"errorPhoneRequired": "Phone number is required",
+			"errorPhoneNumber": "Invalid phone number format",
+			"phoneNumber": "Phone number",
+			"extraPhoneNumber": "Extra phone number",
+			"month": "Month",
+			"year": "Year"
+		},
+		"settingTooltips": {
+			"languageRegion": {
+				"name": "Language and region",
+				"description": "Select your preferred language and region. This will help personalize your experience on the site."
+			},
+			"currency": {
+				"name": "Currency",
+				"description": "Choose the currency you want to use for prices and transactions. Options include USD, UAH, and EUR."
+			},
+			"place": {
+				"name": "Place",
+				"description": "Enter your place of residence. This information helps us display relevant offers in your area."
+			},
+			"notifications": {
+				"name": "Notifications",
+				"description": "Turn on or off notifications about important updates, messages, and offers."
+			},
+			"showPhone": {
+				"name": "Show phone",
+				"description": "Enable or disable the display of your phone number in your public profile and listings."
+			},
+			"advancedUser": {
+				"name": "Advanced user",
+				"description": "Activate advanced user features such as extended analytics and profile customization."
+			},
+			"deleteAccount": {
+				"name": "Delete account",
+				"description": "Select a reason for deleting your account. This helps us understand your experience and improve the platform."
+			}
+		},
+		"settingFormInputs": {
+			"languageRegion": "Language and region",
+			"currency": "Currency",
+			"place": "Place",
+			"notifications": "Notifications",
+			"showPhone": "Show phone",
+			"advancedUser": "Advanced user",
+			"deleteAccount": "Delete account",
+			"deleteAccountOption1": "I no longer use the service",
+			"deleteAccountOption2": "Too expensive",
+			"deleteAccountOption3": "Found a better alternative",
+			"deleteAccountOption4": "Not satisfied with the quality",
+			"deleteAccountOption5": "I have security or privacy concerns",
+			"deleteAccountOption6": "Too much spam or unnecessary messages",
+			"deleteAccountOption7": "Temporarily deleting, planning to come back later",
+			"deleteAccountOption8": "Created a new account",
+			"deleteAccountOption9": "Can't find the functionality I need",
+			"deleteAccountOption10": "Technical issues, frequent crashes",
+			"deleteAccountOption11": "I'm not happy with the company's policies",
+			"deleteAccountOption12": "Account was hacked",
+			"deleteAccountOption13": "Other personal reasons"
+		},
+		"rules": {
+			"items": {
+				"privacyPolicy": {
+					"title": "Privacy Policy",
+					"description": "Terms & Policies"
+				},
+				"userDataDeletion": {
+					"title": "User Data Deletion",
+					"description": "Deletion Requests"
+				},
+				"moderation": {
+					"title": "Moderation",
+					"description": "Rules"
+				},
+				"basicPrinciples": {
+					"title": "Basic Principles",
+					"description": "Explanation"
+				}
+			}
+		}
+	},
+
+	"Rules": {
+		"privacyPolicy": {
+			"title": "Privacy Policy",
+			"preTitle": "Welcome to U2M Space — a platform designed to ensure safe and convenient exchange, sales, and participation in auctions.",
+			"description": "We respect your right to privacy and transparency about how we handle your personal data. This Privacy Policy explains what information we collect, how we process it, and how you can manage your data. By using the U2M Space platform («Platform», «we», «U2M»), you agree to this Policy and give consent for data processing in accordance with applicable law.",
+
+			"generalProvisions": {
+				"title": "I. General Provisions",
+				"description": "This Policy regulates the collection, storage, processing, and use of personal data of U2M Space users («users», «you», «U2M»). \n\nThe Platform Administration (our team) processes your data when necessary for:",
+				"items": {
+					"1": "Access to shopping, auctions, and exchanges",
+					"2": "Ensuring security",
+					"3": "Improving services and personalizing user experience"
+				}
+			},
+			"informationWeCollect": {
+				"title": "II. Information We Collect",
+				"description": "We may receive the following personal data:",
+				"items": {
+					"1": "Full name, email, phone number",
+					"2": "Address of the seller or buyer (in case of deals)",
+					"3": "IP address, browser type, device",
+					"4": "Cookies and session storage to analyze user behavior",
+					"5": "Platform usage history (searches, product views, bids, exchanges, etc.)",
+					"6": "Data from third-party analytics (Google, Facebook, etc.)",
+					"7": "Demographics or other public data that can be found in open sources"
+				}
+			},
+			"howWeUseYourInformation": {
+				"title": "III. How We Use Your Information",
+				"description": "We use your personal data for the following purposes:",
+				"items": {
+					"1": "Creating and maintaining your user account",
+					"2": "Participation in sales, auctions, exchanges",
+					"3": "Display of personalized content, products, bids",
+					"4": "Order processing and delivery",
+					"5": "Notifications about updates, promotions",
+					"6": "Fighting fraud and spam",
+					"7": "Compliance with applicable laws"
+				}
+			},
+			"dataSharingAndDisclosure": {
+				"title": "IV. Data Sharing and Disclosure",
+				"description": "We do not share your data with third parties, except:",
+				"items": {
+					"1": "When necessary to provide services (e.g., delivery, payment providers)",
+					"2": "When required by law or court order",
+					"3": "In case of rule violations to protect U2M Space and users’ rights"
+				}
+			},
+			"protectingYourInformation": {
+				"title": "V. Protecting Your Information",
+				"description": "We apply modern technical and organizational measures to protect your personal data. Your data is stored on secure servers. Only authorized employees with confidentiality agreements have access to it."
+			},
+			"managingYourData": {
+				"title": "VI. Managing Your Data",
+				"description": "You have the right to:",
+				"items": {
+					"1": "View, change, or delete your profile data",
+					"2": "Request complete data deletion via our support",
+					"3": "Withdraw consent, which may limit your access to services"
+				}
+			},
+			"policyUpdates": {
+				"title": "VII. Policy Updates",
+				"description": "We may update this Policy. If we do, you will be notified via the Platform. By continuing to use the service after updates, you agree to the new terms."
+			},
+			"additionalTerms": {
+				"title": "VIII. Additional Terms",
+				"description": "U2M Space is not responsible for account loss due to the user's unsafe behavior. \n\n This Policy is subject to the U2M Space Terms of Use."
+			},
+			"contactInformation": {
+				"title": "Contact Information",
+				"description": "For questions or concerns about privacy, contact us at:"
+			}
+		},
+		"userDataDeletion": {
+			"title": "User Data Deletion",
+			"preTitle": "We respect your right to privacy and provide the ability to delete your personal data upon request.",
+			"howToRequestDataDeletion": {
+				"title": "How to request data deletion:",
+				"description": "To delete your account and all associated personal data, please follow these two steps:",
+				"items": {
+					"1": "1. Log in to your profile, go to the <strong>«Settings»</strong> section, and click <strong>«Delete Account»</strong>, selecting a reason for deletion. Your account will then be hidden from public view. Full and permanent data deletion will occur automatically after 6 months",
+					"2": "2. If you wish to speed up the process, send an email to <a href='mailto:delete@u2m.space'>delete@u2m.space</a> with the subject <strong>«User Data Deletion»</strong>."
+				}
+			},
+			"whatWillBeDeleted": {
+				"title": "What will be deleted:",
+				"description": "After confirming your identity, we will:",
+				"items": {
+					"1": "Delete your account",
+					"2": "Delete or anonymize all personal information associated with your profile",
+					"3": "Stop further processing of your data"
+				}
+			},
+			"processingTime": {
+				"title": "Processing time:",
+				"description": "Deletion requests are processed within 30 calendar days from the date of receipt.",
+				"info": "If you have any additional questions regarding the deletion or processing of personal data — feel free to contact us at any time."
+			}
+		},
+		"corePrinciples": {
+			"title": "Core Principles",
+			"nickname": {
+				"title": "Nickname",
+				"description": "Only the user's nickname is displayed in all listings. \n\n During the first login, the system prompts to set a unique nickname (4–16 characters). Without it, the user cannot proceed on the platform."
+			},
+			"realName": {
+				"title": "Real Name",
+				"description": "First and last name are used only optionally for identity verification. After verification, these fields increase the «Trust Level» and uploaded documents are deleted from the system"
+			},
+			"trustLevel": {
+				"title": "Trust Level",
+				"description": "Shows how trustworthy the user is as a buyer or seller. \n\n Scale: from 0 to 100 points.\n\n Starting value: 25 points. \n\n The rating is updated automatically based on the user's actions (algorithm details coming soon)."
+			},
+			"bonuses": {
+				"title": "Bonuses (U)",
+				"description": "Internal currency of the platform. \n\n Accrued for quality listings. Bonuses can be used to boost ads in the feed."
+			},
+			"emailAndPhone": {
+				"title": "Email and Phone",
+				"description": "Can be imported from social networks. If not — fields will be highlighted as mandatory."
+			},
+			"afterAuthorization": {
+				"title": "After Authorization",
+				"description": "If all required fields are filled — user is taken to the listing feed. \n\n If some data is missing — the My Space / Profile page opens with instructions on what needs to be fixed."
+			},
+			"languageRegionCurrencyLocation": {
+				"title": "Language & Region, Currency, Location",
+				"description": "These settings are available via [ICON:globe:] icon in the top menu, and in My Space / Profile. They duplicate each other for convenience."
+			},
+			"notifications": {
+				"title": "Notifications",
+				"description": "Separate button in the top menu [ICON:chat:]. It handles event alerts. Notifications are also sent by email."
+			},
+			"experiencedUser": {
+				"title": "Experienced User",
+				"description": "If disabled — interface shows hints, text menu, and icons. \n\n If enabled — simplified interface: only icons, no text hints."
+			},
+			"deleteAccount": {
+				"title": "Delete Account",
+				"description": "This option deletes the user’s account. \n\n For 6 months the data remains stored (with limited access), then it is permanently deleted. Next to it, a dropdown shows possible deletion reasons. If the account is blocked, it is not deleted for 1 year. Upon repeated violation, it is permanently banned without recovery."
+			},
+			"hiddenDataAfterVerification": {
+				"title": "Hidden Data After Verification",
+				"description": "After identity verification, fields like Real Name, Last Name, Gender, Date of Birth become hidden and inaccessible for editing or viewing by others."
+			}
+		},
+		"moderationRules": {
+			"title": "Moderator Guidelines for Ads",
+			"moderationGoal": {
+				"title": "Moderation Goal",
+				"description": "Ensure that all ads on the platform are relevant, safe, comply with site rules, and do not violate any country's laws."
+			},
+			"mainReviewCriteria": {
+				"title": "Main Review Criteria",
+				"adContent": {
+					"title": "1. Ad Content",
+					"description": {
+						"title": "Title — short, clear, without excessive symbols (!!!, $$$) or emojis (🔥, TOP, super deal)",
+						"description": "Description — informative, no offensive language, spam, or contact info (if prohibited).",
+						"photos": {
+							"title": "Photos:",
+							"items": {
+								"1": "Genuine, not taken from the internet (check via image search)",
+								"2": "No watermarks from third-party sources",
+								"3": "No prohibited content (nudity, violence, etc.)"
+							}
+						}
+					}
+				},
+				"categoryTags": {
+					"title": "2. Category & Tags",
+					"description": "Correct product/service category selected. \n\n Relevant tags that reflect the ad's content"
+				},
+				"postingRules": {
+					"title": "3. Posting Rules",
+					"description": " Ads are not allowed if they:",
+					"items": {
+						"1": "Violate laws (weapons, drugs, pirated software, animals without permits, etc.)",
+						"2": "Offer fraudulent services",
+						"3": "Contain false information",
+						"4": "Are duplicates (same ad in multiple categories or accounts)",
+						"5": "Are purely promotional, not part of P2P trading"
+					}
+				}
+			},
+			"moderatorWorkflow": {
+				"title": "Moderator Workflow",
+				"description": "Receive list of new/updated ads. \n\n Open each ad and check:",
+				"items": {
+					"1": "Title & Description",
+					"2": "Photos",
+					"3": "Correct category",
+					"4": "No prohibited topics"
+				},
+				"makeDecision": {
+					"title": "Make a decision:",
+					"items": {
+						"1": "Approve — ad meets all requirements",
+						"2": "Return for revision — comment on what needs to be fixed",
+						"3": "Reject — specify a clear reason for rejection (from template or custom)"
+					}
+				}
+			},
+			"examplesOfRejectionReasons": {
+				"title": "Examples of Rejection Reasons",
+				"items": {
+					"1": "Photo doesn’t match the product or is taken from someone else",
+					"2": "Ad contains prohibited topic (e.g. document sales)",
+					"3": "Description includes contact info, which is against the rules",
+					"4": "Ad is a duplicate of an already published one"
+				}
+			},
+			"important": {
+				"title": "Important",
+				"items": {
+					"1": "Confidentiality: do not disclose any user personal data.",
+					"2": "Impartiality: only approve/reject based on rules, not personal opinion.",
+					"3": "Logging: all moderator actions must be saved (for history/audit)."
+				}
+			}
+		}
+	},
+
+	"Payment": {
+		"tabs": {
+			"plan": "Plan",
+			"paymentHistory": "Payment history"
+		},
+		"planSection": {
+			"toggle": {
+				"monthly": "Monthly",
+				"yearly": "Yearly",
+				"info": "you Save 50%"
+			},
+			"generalItems": {
+				"maxClassifieds": "Max classifieds",
+				"liftInterval": "Lift interval",
+				"liftingType": "Lifting type",
+				"searchVisibility": "Search visibility",
+				"price": "Price"
+			},
+			"buttons": {
+				"active": "Active",
+				"choose": "Choose"
+			},
+			"light": {
+				"title": "Light",
+				"liftInterval": "Unlimited",
+				"liftingType": "Manual",
+				"searchVisibility": "Standard"
+			},
+			"smart": {
+				"title": "Smart",
+				"liftInterval": "3 days",
+				"liftingType": "Auto",
+				"searchVisibility": "Increased"
+			},
+			"extremum": {
+				"title": "Extremum",
+				"maxClassifieds": "Unlimited",
+				"liftInterval": "8 hours",
+				"liftingType": "Auto",
+				"searchVisibility": "Priority"
+			}
+		},
+		"paymentHistory": {
+			"columns": {
+				"dateStart": "Date start",
+				"operationId": "Operation ID",
+				"type": "Type",
+				"heading": "Heading",
+				"endDate": "End date",
+				"amount": "Amount"
+			},
+			"types": {
+				"monthlyRise": "Monthly Rise",
+				"yearlyPlan": "Yearly Plan"
+			}
+		}
+	},
+
+	"LanguageModal": {
+		"chooseLanguageRegion": {
+			"title": "Choose language and region",
+			"english": "English",
+			"unitedStates": "United States",
+			"ukrainian": "Ukrainian",
+			"ukraine": "Ukraine",
+			"polish": "Polish",
+			"poland": "Poland"
+		},
+		"chooseCurrency": {
+			"title": "Choose currency",
+			"americanDollar": "US Dollar",
+			"ukrainianHryvnia": "Ukrainian Hryvnia",
+			"euro": "Euro"
+		},
+		"chooseCity": {
+			"title": "Choose a city",
+			"city": "City",
+			"cities": {
+				"newYork": "New York",
+				"london": "London",
+				"kyiv": "Kyiv",
+				"poltava": "Poltava",
+				"odessa": "Odessa",
+				"kharkiv": "Kharkiv",
+				"warsaw": "Warsaw"
+			}
+		},
+		"errors": {
+			"failedToLoadCities": "City not found"
+		}
+	},
+
+	"LoginModal": {
+		"welcome": "Welcome",
+		"logInWith": "Log in with",
+		"terms": "By authorizing you accept the terms",
+		"privacyPolicy": "Privacy Policy",
+		"userDataDeletion": "User Data Deletion"
+	},
+
+	"Notifications": {
+		"empty": "You currently have no notifications",
+		"types": {
+			"TRUST_RATING_CHANGED": {
+				"title": "Trust rating",
+				"message": "You received a raise of +{value}"
+			},
+			"BONUSES_CHANGED": {
+				"title": "Bonuses",
+				"message": "You have been credited with {value} {units}"
+			},
+			"PLAN_CHANGED": {
+				"title": "Plan",
+				"message": "Your {value} plan expires in 1 day."
+			},
+			"CLASSIFIED_ADDED": {
+				"title": "Classifieds",
+				"message": "Successfully posted on the website"
+			},
+			"CLASSIFIED_UPDATED": {
+				"title": "Classifieds",
+				"message": "Your classified has been updated"
+			},
+			"CLASSIFIED_DELETED": {
+				"title": "Classifieds",
+				"message": "Your classified has been deleted"
+			},
+			"CLASSIFIED_TO_FAVORITE": {
+				"title": "Classifieds",
+				"message": "A user added your classified to favorites"
+			},
+			"MESSAGE_RECEIVED": {
+				"title": "Messages",
+				"message": "You received a new message for classified"
+			},
+			"DEAL_PROPOSED": {
+				"title": "Classifieds",
+				"message": "A deal has been proposed for your classified"
+			},
+			"RULES_CHANGED": {
+				"title": "Marketplace Rules",
+				"message": "Marketplace rules have been updated"
+			},
+			"OFFICIAL_NAME_CONFIRMED": {
+				"title": "Profile",
+				"message": "Your official name has been confirmed {value}"
+			}
+		}
+	},
+
+	"Filters": {
+		"price": "Price",
+		"tags": "Tags",
+		"sortByRegionAndCity": "Sort by Region and City",
+		"sort": "Sort",
+		"errorPrice": "Price range not available",
+		"buttons": {
+			"firstNew": "First new",
+			"firstOld": "First old",
+			"highPrice": "High price",
+			"lowPrice": "Low price",
+			"apply": "Apply"
+		}
+	},
+
+	"Buttons": {
+		"add": "Add",
+		"favorites": "Favorites",
+		"filters": "Filters",
+		"notifications": "Notifications",
+		"letsStart": "Let's start",
+		"login": "Log in",
+		"next": "Next",
+		"back": "Back",
+		"publish": "Publish",
+		"save": "Save"
+	},
+
+	"Components": {
+		"mySpace": "My space",
+		"placeholders": {
+			"search": "Search",
+			"imLookingFor": "I'm looking for..."
+		},
+		"inputs": {
+			"error": "Character limit reached"
+		}
+	},
+
+	"DatePicker": {
+		"month": "Month",
+		"year": "Year",
+		"months": {
+			"january": "January",
+			"february": "February",
+			"march": "March",
+			"april": "April",
+			"may": "May",
+			"june": "June",
+			"july": "July",
+			"august": "August",
+			"september": "September",
+			"october": "October",
+			"november": "November",
+			"december": "December"
+		},
+		"monthsShort": {
+			"january": "Jan",
+			"february": "Feb",
+			"march": "Mar",
+			"april": "Apr",
+			"may": "May",
+			"june": "Jun",
+			"july": "Jul",
+			"august": "Aug",
+			"september": "Sep",
+			"october": "Oct",
+			"november": "Nov",
+			"december": "Dec"
+		},
+		"weekDays": {
+			"monday": "Mo",
+			"tuesday": "Tu",
+			"wednesday": "We",
+			"thursday": "Th",
+			"friday": "Fr",
+			"saturday": "Sa",
+			"sunday": "Sa"
+		}
+	},
+
+	"Metadata": {
+		"title": "Marketplace for Trading, Selling & Auctions of Items",
+		"description": "A universal marketplace to sell, trade or auction new and used items. Safe, easy and profitable — join now and start exchanging!"
+	}
+}

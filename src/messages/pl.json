@@ -1,0 +1,704 @@
+{
+	"Home": {
+		"title1": "Cześć,",
+		"title2": "jestem U2M Space",
+		"description1": "Twój nowy, prostszy i niezawodny",
+		"description2": "sposób wymiany.",
+		"benefit1": "Daj swoim rzeczom drugie życie",
+		"benefit2": "Pomagamy się odnaleźć",
+		"benefit3": "Szybka komunikacja w celu wymiany lub sprzedaży"
+	},
+
+	"SellingClassifieds": {
+		"tabs": {
+			"selling": "Sprzedaż",
+			"bidding": "Licytacja",
+			"barter": "Wymieniam"
+		}
+	},
+
+	"Classified": {
+		"similarOffers": "Podobne oferty",
+		"userButtons": {
+			"sendMessage": "Wiadomość",
+			"safeBuy/deal": "Zakup/transakcja",
+			"tr": "oz",
+			"trustRating": "Ocena zaufania"
+		},
+		"loginToView": "Zaloguj się, aby zobaczyć"
+	},
+
+	"MyClassifieds": {
+		"tabs": {
+			"all": "Wszystkie",
+			"active": "Aktywne",
+			"hide": "Ukryj",
+			"onReview": "W recenzji"
+		},
+		"buttons": {
+			"myClassifieds": "Moje ogłoszenia",
+			"review": "Recenzja",
+			"favorites": "Ulubione",
+			"payment": "Zapłata",
+			"profile": "Profil",
+			"logout": "Wyloguj",
+			"addClassifieds": "Dodaj ogłoszenie",
+			"show": "pokazywać",
+			"hide": "ukryj",
+			"edit": "edytuj",
+			"up": "do góry"
+		}
+	},
+
+	"CreateEditClassified": {
+		"addPhotos": "Dodaj zdjęcia",
+		"tags": "Tagi",
+		"addTag": "Dodaj tag",
+		"recommendedTags": "Zalecane tagi",
+		"setTheMain": "Ustaw główny",
+		"delete": "Usuwać",
+		"formInputs": {
+			"title": "Tytuł",
+			"description": "Opis",
+			"price": "Cena"
+		},
+		"errorInputs": {
+			"title": {
+				"message": "Tytuł może mieć maksymalnie 60 znaków",
+				"required": "Tytuł jest wymagany"
+			},
+			"description": {
+				"message": "Opis może mieć maksymalnie 300 znaków",
+				"required": "Opis jest wymagany"
+			},
+			"price": {
+				"required": "Cena jest wymagana",
+				"message1": "Cena musi być liczbą dodatnią",
+				"message2": "Cena musi być prawidłową liczbą",
+				"message3": "Nie udało się załadować kursów walut"
+			}
+		},
+		"tooltips": {
+			"title": {
+				"name": "Tytuł",
+				"description": "Nagłówek Twojej reklamy, który użytkownicy widzą w wyszukiwarce lub na stronie. Powinien być krótki i jasny."
+			},
+			"description": {
+				"name": "Opis",
+				"description": "Krótki opis reklamy. Wyjaśnia, czego dotyczy reklama i zachęca użytkownika do zakupu lub wymiany."
+			},
+			"price": {
+				"name": "Cena",
+				"description": "Ustal konkurencyjną cenę dla swojego przedmiotu (musi być dodatnia liczba)."
+			}
+		}
+	},
+
+	"Favorites": {
+		"tabs": {
+			"all": "Wszystkie",
+			"selling": "Sprzedaż",
+			"bidding": "Licytacja",
+			"barter": "Wymieniam"
+		}
+	},
+
+	"Profile": {
+		"tabs": {
+			"information": "Informacje",
+			"setting": "Ustawienia",
+			"rules": "Zasady"
+		},
+		"bonuses": "Bonusy",
+		"trustRating": "Ocena zaufania",
+		"informationTooltips": {
+			"nickname": {
+				"name": "Pseudonim",
+				"description": "Pseudonim, który będzie wyświetlany na stronie, musi być unikalny. Musi mieć więcej niż 4 znaki."
+			},
+			"legalName": {
+				"name": "Imię i nazwisko",
+				"description": "Nazwa podana w paszporcie, prawie jazdy lub innym dokumencie podróży. Nie będzie wyświetlana na stronie."
+			},
+			"legalSurname": {
+				"name": "Nazwisko prawne",
+				"description": "Nazwisko zgodne z oficjalnymi dokumentami, takimi jak paszport lub dowód. Nie będzie widoczne na stronie."
+			},
+			"gender": {
+				"name": "Płeć",
+				"description": "Wybierz swoją płeć zgodnie z dokumentami urzędowymi. Informacja ta będzie użyta do weryfikacji."
+			},
+			"dateOfBirth": {
+				"name": "Data urodzenia",
+				"description": "Wprowadź datę urodzenia zgodnie z paszportem lub dowodem. Musisz mieć 18 lat lub więcej, aby się zarejestrować."
+			},
+			"email": {
+				"name": "Adres e-mail",
+				"description": "Prawidłowy adres e-mail używany do logowania i powiadomień. Musi być dostępny do potwierdzenia konta."
+			},
+			"phoneNumber": {
+				"name": "Numer telefonu",
+				"description": "Główny numer kontaktowy z kodem kraju. Będzie używany do weryfikacji i ważnych powiadomień."
+			},
+			"extraPhoneNumber": {
+				"name": "Dodatkowy numer telefonu",
+				"description": "Opcjonalny dodatkowy numer kontaktowy na wypadek, gdyby nie można było się z Tobą skontaktować pod głównym numerem."
+			}
+		},
+		"informationFormInputs": {
+			"yourNickname": "Twój pseudonim",
+			"errorNickname": "wymagane więcej niż 3 znaki",
+			"errorNicknameRequired": "Pseudonim jest wymagany",
+			"infoNickname": "Twój pseudonim (Wyświetlany zamiast imienia i nazwiska)",
+			"documentName": "Nazwa dokumentu",
+			"documentNameDescr": "Nazwa podana w paszporcie, prawie jazdy lub innym dokumencie podróży.",
+			"legalName": "Imię i nazwisko",
+			"legalSurname": "Nazwisko prawne",
+			"gender": "Płeć",
+			"male": "Mężczyzna",
+			"female": "Kobieta",
+			"birthday": "Data urodzenia",
+			"emailAddress": "Adres e-mail",
+			"errorEmailRequired": "Adres e-mail jest wymagany",
+			"errorEmail": "Nieprawidłowy format adresu e-mail",
+			"errorPhoneRequired": "Numer telefonu jest wymagany",
+			"errorPhoneNumber": "Nieprawidłowy format numeru telefonu",
+			"phoneNumber": "Numer telefonu",
+			"extraPhoneNumber": "Dodatkowy numer telefonu",
+			"month": "Miesiąc",
+			"year": "Rok"
+		},
+		"settingTooltips": {
+			"languageRegion": {
+				"name": "Język i region",
+				"description": "Wybierz preferowany język i region. Pomoże to spersonalizować Twoje doświadczenie na stronie."
+			},
+			"currency": {
+				"name": "Waluta",
+				"description": "Wybierz walutę, której chcesz używać do cen i transakcji. Dostępne opcje to USD, UAH i EUR."
+			},
+			"place": {
+				"name": "Miejsce zamieszkania",
+				"description": "Wprowadź swoje miejsce zamieszkania. Informacja ta pomaga nam wyświetlać odpowiednie oferty w Twojej okolicy."
+			},
+			"notifications": {
+				"name": "Powiadomienia",
+				"description": "Włącz lub wyłącz powiadomienia o ważnych aktualizacjach, wiadomościach i ofertach."
+			},
+			"showPhone": {
+				"name": "Pokaż telefon",
+				"description": "Włącz lub wyłącz wyświetlanie swojego numeru telefonu w profilu publicznym i ogłoszeniach."
+			},
+			"advancedUser": {
+				"name": "Zaawansowany użytkownik",
+				"description": "Aktywuj funkcje zaawansowanego użytkownika, takie jak rozszerzona analityka i personalizacja profilu."
+			},
+			"deleteAccount": {
+				"name": "Usuń konto",
+				"description": "Wybierz powód usunięcia konta. Pomoże nam to zrozumieć Twoje doświadczenie i ulepszyć platformę."
+			}
+		},
+		"settingFormInputs": {
+			"languageRegion": "Język i region",
+			"currency": "Waluta",
+			"place": "Miejsce",
+			"notifications": "Powiadomienia",
+			"showPhone": "Pokaż numer telefonu",
+			"advancedUser": "Użytkownik zaawansowany",
+			"deleteAccount": "Usuń konto",
+			"deleteAccountOption1": "Nie korzystam już z usługi",
+			"deleteAccountOption2": "Zbyt drogie",
+			"deleteAccountOption3": "Znalazłem lepszą alternatywę",
+			"deleteAccountOption4": "Nie jestem zadowolony z jakości",
+			"deleteAccountOption5": "Mam obawy dotyczące bezpieczeństwa lub prywatności",
+			"deleteAccountOption6": "Zbyt dużo spamu lub niepotrzebnych wiadomości",
+			"deleteAccountOption7": "Tymczasowe usuwanie, planuję wrócić później",
+			"deleteAccountOption8": "Utworzyłem nowe konto",
+			"deleteAccountOption9": "Nie mogę znaleźć potrzebnej mi funkcjonalności",
+			"deleteAccountOption10": "Problemy techniczne, częste awarie",
+			"deleteAccountOption11": "Nie jestem zadowolony z polityki firmy",
+			"deleteAccountOption12": "Konto zostało zhakowane",
+			"deleteAccountOption13": "Inne powody osobiste"
+		},
+		"rules": {
+			"items": {
+				"privacyPolicy": {
+					"title": "Polityka prywatności",
+					"description": "Warunki i zasady"
+				},
+				"userDataDeletion": {
+					"title": "Usunięcie danych użytkownika",
+					"description": "Żądania usunięcia"
+				},
+				"moderation": {
+					"title": "Moderacja",
+					"description": "Zasady"
+				},
+				"basicPrinciples": {
+					"title": "Podstawowe zasady",
+					"description": "Wyjaśnienie"
+				}
+			}
+		}
+	},
+
+	"Rules": {
+		"privacyPolicy": {
+			"title": "Polityka prywatności",
+			"preTitle": "Witamy na U2M Space — platformie, która zapewnia bezpieczną i wygodną wymianę, sprzedaż i udział w aukcjach.",
+			"description": "Szanujemy Twoje prawo do prywatności oraz przejrzystość w przetwarzaniu danych osobowych. Niniejsza Polityka prywatności wyjaśnia, jakie dane zbieramy, jak je przetwarzamy i jak możesz nimi zarządzać. Korzystając z platformy U2M Space («Platforma», «my», «U2M»), akceptujesz niniejszą Politykę i wyrażasz zgodę na przetwarzanie danych zgodnie z obowiązującym prawem.",
+
+			"generalProvisions": {
+				"title": "I. Postanowienia ogólne",
+				"description": "Polityka reguluje zbieranie, przechowywanie, przetwarzanie i wykorzystywanie danych osobowych użytkowników U2M Space («użytkownicy», «Ty», «U2M»). \n\n Administracja Platformy (nasz zespół) przetwarza dane w celu:",
+				"items": {
+					"1": "Uzyskania dostępu do handlu, aukcji i wymiany",
+					"2": "Zapewnienia bezpieczeństwa",
+					"3": "Ulepszania usług i personalizacji doświadczenia użytkownika"
+				}
+			},
+			"informationWeCollect": {
+				"title": "II. Dane, które zbieramy",
+				"description": "Możemy otrzymać następujące dane osobowe:",
+				"items": {
+					"1": "Imię i nazwisko, adres e-mail, numer telefonu",
+					"2": "Adres sprzedawcy lub kupującego (w przypadku transakcji)",
+					"3": "Adres IP, typ przeglądarki, urządzenie",
+					"4": "Pliki cookies i dane sesji do analizy zachowania",
+					"5": "Historia korzystania z Platformy (wyszukiwania, przeglądanie produktów, oferty, wymiany itd.)",
+					"6": "Dane z narzędzi analitycznych (Google, Facebook itd.)",
+					"7": "Dane demograficzne lub inne dane publiczne dostępne w sieci"
+				}
+			},
+			"howWeUseYourInformation": {
+				"title": "III. Jak wykorzystujemy Twoje dane",
+				"description": "Wykorzystujemy Twoje dane osobowe w następujących celach:",
+				"items": {
+					"1": "Tworzenie i obsługa konta użytkownika",
+					"2": "Udział w sprzedaży, aukcjach, wymianach",
+					"3": "Wyświetlanie spersonalizowanych treści, produktów, ofert",
+					"4": "Obsługa zamówień i dostaw",
+					"5": "Informowanie o zmianach, promocjach",
+					"6": "Walka z oszustwami i spamem",
+					"7": "Przestrzeganie przepisów prawa"
+				}
+			},
+			"dataSharingAndDisclosure": {
+				"title": "IV. Udostępnianie danych stronom trzecim",
+				"description": "Nie przekazujemy danych osobom trzecim, z wyjątkiem przypadków:",
+				"items": {
+					"1": "Gdy jest to konieczne do realizacji usług (np. dostawa, płatności)",
+					"2": "Gdy wymagają tego przepisy prawa lub sądu",
+					"3": "W przypadku naruszeń zasad, w celu ochrony praw U2M Space i użytkowników"
+				}
+			},
+			"protectingYourInformation": {
+				"title": "V. Ochrona danych",
+				"description": "Stosujemy nowoczesne środki techniczne i organizacyjne do ochrony danych osobowych. Dane przechowywane są na bezpiecznych serwerach. Dostęp mają tylko upoważnieni pracownicy z podpisanymi umowami o poufności."
+			},
+			"managingYourData": {
+				"title": "VI. Zarządzanie danymi",
+				"description": "Masz prawo do:",
+				"items": {
+					"1": "Przeglądania, edycji lub usunięcia swoich danych",
+					"2": "Żądania całkowitego usunięcia danych poprzez kontakt ze wsparciem",
+					"3": "Wycofania zgody, co może ograniczyć dostęp do usług"
+				}
+			},
+			"policyUpdates": {
+				"title": "VII. Zmiany w Polityce",
+				"description": "Możemy aktualizować Politykę. W przypadku zmian powiadomimy Cię przez Platformę. Dalsze korzystanie z serwisu oznacza akceptację nowych warunków."
+			},
+			"additionalTerms": {
+				"title": "VIII. Postanowienia dodatkowe",
+				"description": "U2M Space nie odpowiada za utratę konta wynikającą z nieostrożnego działania użytkownika. \n\n Polityka podlega Warunkom korzystania z U2M Space."
+			},
+			"contactInformation": {
+				"title": "Kontakt",
+				"description": "W razie pytań lub uwag dotyczących prywatności skontaktuj się z nami:"
+			}
+		},
+		"userDataDeletion": {
+			"title": "Usunięcie danych użytkownika",
+			"preTitle": "Szanujemy Twoje prawo do prywatności i umożliwiamy usunięcie Twoich danych osobowych na Twoje żądanie.",
+			"howToRequestDataDeletion": {
+				"title": "Jak złożyć wniosek o usunięcie danych:",
+				"description": "Aby usunąć swoje konto i wszystkie powiązane z nim dane osobowe, wykonaj dwa kroki:",
+				"items": {
+					"1": "1. Zaloguj się na swoje konto, przejdź do sekcji <strong>«Ustawienia»</strong> i kliknij <strong>«Usuń konto»</strong>, wybierając powód usunięcia. Twoje konto zostanie ukryte przed publicznym dostępem. Pełne i trwałe usunięcie danych nastąpi automatycznie po 6 miesiącach.",
+					"2": "2. Jeśli chcesz przyspieszyć ten proces, wyślij e-mail na adres <a href='mailto:delete@u2m.space'>delete@u2m.space</a> z tematem <strong>«Usunięcie danych użytkownika»</strong>."
+				}
+			},
+			"whatWillBeDeleted": {
+				"title": "Co zostanie usunięte:",
+				"description": "Po potwierdzeniu Twojej tożsamości:",
+				"items": {
+					"1": "Usuniemy Twoje konto",
+					"2": "Usuniemy lub zanonimizujemy wszystkie dane osobowe powiązane z Twoim profilem",
+					"3": "Zakończymy dalsze przetwarzanie Twoich danych"
+				}
+			},
+			"processingTime": {
+				"title": "Czas realizacji:",
+				"description": "Wnioski o usunięcie danych są przetwarzane w ciągu 30 dni kalendarzowych od daty otrzymania.",
+				"info": "W razie dodatkowych pytań dotyczących usunięcia lub przetwarzania danych osobowych — zapraszamy do kontaktu w dowolnym momencie."
+			}
+		},
+		"corePrinciples": {
+			"title": "Główne zasady",
+			"nickname": {
+				"title": "Nick",
+				"description": "We wszystkich ogłoszeniach wyświetlany jest tylko nick użytkownika. \n\n Podczas pierwszego logowania system zaproponuje ustawienie unikalnego nicka (od 4 do 16 znaków). Bez tego użytkownik nie będzie mógł kontynuować."
+			},
+			"realName": {
+				"title": "Imię i nazwisko",
+				"description": "Imię i nazwisko są używane tylko opcjonalnie do weryfikacji tożsamości. Po weryfikacji dane te zwiększają «Poziom zaufania», a przesłane dokumenty są usuwane z systemu."
+			},
+			"trustLevel": {
+				"title": "Poziom zaufania",
+				"description": "Pokazuje zaufanie do użytkownika jako kupującego lub sprzedawcy. \n\n Skala: od 0 do 100 punktów. \n\n Wartość początkowa: 25 punktów. \n\n Ocena zmienia się automatycznie w zależności od działań użytkownika (szczegóły algorytmu pojawią się później)."
+			},
+			"bonuses": {
+				"title": "Bonusy (U)",
+				"description": "Wewnętrzna waluta platformy. \n\n Przyznawane za wysoką jakość ogłoszeń. Można je wykorzystać do promowania ogłoszeń."
+			},
+			"emailAndPhone": {
+				"title": "E-mail i telefon",
+				"description": "Mogą być zaimportowane z sieci społecznościowych. Jeśli nie — pola będą oznaczone jako obowiązkowe."
+			},
+			"afterAuthorization": {
+				"title": "Po autoryzacji",
+				"description": "Jeśli wszystkie obowiązkowe pola są wypełnione — użytkownik trafia do listy ogłoszeń. \n\n Jeśli są braki — otwiera się strona Mój profil, gdzie pokazane jest, co należy poprawić."
+			},
+			"languageRegionCurrencyLocation": {
+				"title": "Język i region, waluta, lokalizacja",
+				"description": "Dostępne przez ikonę [ICON:globe:] w górnym menu oraz w sekcji Mój profil. Funkcjonalności te się dublują dla wygody."
+			},
+			"notifications": {
+				"title": "Powiadomienia",
+				"description": "Osobny przycisk w górnym menu [ICON:chat:]. Odpowiada za alerty o ważnych zdarzeniach. Powiadomienia są też wysyłane na e-mail."
+			},
+			"experiencedUser": {
+				"title": "Doświadczony użytkownik",
+				"description": "Jeśli wyłączone — interfejs pokazuje podpowiedzi, menu tekstowe i ikony. \n\n Jeśli włączone — uproszczony interfejs: tylko ikony, bez tekstu."
+			},
+			"deleteAccount": {
+				"title": "Usunięcie konta",
+				"description": "Opcja ta usuwa konto użytkownika. \n\n Dane przechowywane są przez 6 miesięcy (ograniczony dostęp), po czym są trwale usuwane. Obok znajduje się rozwijana lista z możliwymi powodami usunięcia. Jeśli konto jest zablokowane, nie jest usuwane przez 1 rok. Przy ponownym naruszeniu — blokada na stałe, bez możliwości odzyskania."
+			},
+			"hiddenDataAfterVerification": {
+				"title": "Ukryte dane po weryfikacji",
+				"description": "Po potwierdzeniu tożsamości pola Imię, Nazwisko, Płeć, Data urodzenia stają się ukryte i niedostępne do edycji lub przeglądania przez innych."
+			}
+		},
+		"moderationRules": {
+			"title": "Instrukcja dla moderatorów ogłoszeń",
+			"moderationGoal": {
+				"title": "Cel moderacji",
+				"description": "Zapewnić, że wszystkie ogłoszenia na platformie są aktualne, bezpieczne, zgodne z zasadami serwisu i nie naruszają przepisów prawa."
+			},
+			"mainReviewCriteria": {
+				"title": "Główne kryteria weryfikacji",
+				"adContent": {
+					"title": "1. Treść ogłoszenia",
+					"description": {
+						"title": "Tytuł — krótki, precyzyjny, bez zbędnych znaków (!!!, $$$) lub emotikonów (🔥, TOP, supercena).",
+						"description": "Opis — rzeczowy, bez wulgaryzmów, spamu, danych kontaktowych (jeśli są zabronione).",
+						"photos": {
+							"title": "Zdjęcia:",
+							"items": {
+								"1": "Autentyczne, nie z internetu (sprawdzane przez wyszukiwanie obrazem).",
+								"2": "Bez znaków wodnych z innych stron.",
+								"3": "Bez treści zakazanych (np. erotyka, przemoc)."
+							}
+						}
+					}
+				},
+				"categoryTags": {
+					"title": "2. Kategoria i tagi",
+					"description": "Prawidłowo wybrana kategoria produktu/usługi. \n\n Odpowiednie tagi oddające sens ogłoszenia."
+				},
+				"postingRules": {
+					"title": "3. Zasady dopuszczenia",
+					"description": "Ogłoszenia nie są dopuszczone, jeśli:",
+					"items": {
+						"1": "Naruszają prawo (broń, narkotyki, pirackie oprogramowanie, zwierzęta bez pozwolenia itp.)",
+						"2": "Oferują usługi oszukańcze",
+						"3": "Zawierają nieprawdziwe informacje",
+						"4": "Powtarzają się (te same ogłoszenia w różnych kategoriach lub kontach)",
+						"5": "Mają charakter reklamowy, nie są ogłoszeniami w ramach handlu P2P"
+					}
+				}
+			},
+			"moderatorWorkflow": {
+				"title": "Algorytm działań moderatora",
+				"description": "Otrzymać listę nowych/zmodyfikowanych ogłoszeń. \n\n Otworzyć każde ogłoszenie i sprawdzić:",
+				"items": {
+					"1": "Tytuł i opis",
+					"2": "Zdjęcia",
+					"3": "Wybór kategorii",
+					"4": "Brak zakazanych treści"
+				},
+				"makeDecision": {
+					"title": "Podjąć decyzję:",
+					"items": {
+						"1": "Zatwierdzić — ogłoszenie spełnia wszystkie wymagania",
+						"2": "Zwrócić do poprawy — napisać komentarz, co należy zmienić",
+						"3": "Odrzucić — podać jasny powód odmowy (z szablonu lub własny)"
+					}
+				}
+			},
+			"examplesOfRejectionReasons": {
+				"title": "Przykłady powodów odrzucenia",
+				"items": {
+					"1": "Zdjęcie nie pasuje do produktu lub jest cudze",
+					"2": "W ogłoszeniu zawarto zakazany temat (np. sprzedaż dokumentów)",
+					"3": "Opis zawiera dane kontaktowe, co jest zabronione",
+					"4": "Ogłoszenie jest duplikatem już opublikowanego"
+				}
+			},
+			"important": {
+				"title": "Ważne",
+				"items": {
+					"1": "Poufność: nie udostępniać żadnych danych osobowych użytkowników.",
+					"2": "Bezstronność: oceniać tylko zgodnie z zasadami, nie według własnych opinii.",
+					"3": "Rejestrowanie działań: wszystkie działania moderatora muszą być zapisane (do historii / audytu)."
+				}
+			}
+		}
+	},
+
+	"Payment": {
+		"tabs": {
+			"plan": "Plan",
+			"paymentHistory": "Historia płatności"
+		},
+		"planSection": {
+			"toggle": {
+				"monthly": "Miesięczny",
+				"yearly": "Rocznie",
+				"info": "Oszczędzasz 50%"
+			},
+			"generalItems": {
+				"maxClassifieds": "Maks liczba reklam",
+				"liftInterval": "Interwał podnoszenia",
+				"liftingType": "Typ podnoszenia",
+				"searchVisibility": "Widoczność wyszukiwania",
+				"price": "Cena"
+			},
+			"buttons": {
+				"active": "Aktywny",
+				"choose": "Wybierać"
+			},
+			"light": {
+				"title": "Light",
+				"liftInterval": "Nieograniczony",
+				"liftingType": "Podręcznik",
+				"searchVisibility": "Sztandar"
+			},
+			"smart": {
+				"title": "Smart",
+				"liftInterval": "dni",
+				"liftingType": "Automatycznie",
+				"searchVisibility": "Zwiększony"
+			},
+			"extremum": {
+				"title": "Extremum",
+				"maxClassifieds": "Nieograniczony",
+				"liftInterval": "godziny",
+				"liftingType": "Automatycznie",
+				"searchVisibility": "Priorytet"
+			}
+		},
+		"paymentHistory": {
+			"columns": {
+				"dateStart": "Data rozpoczęcia",
+				"operationId": "ID operacji",
+				"type": "Typ",
+				"heading": "Nagłówek",
+				"endDate": "Data zakończenia",
+				"amount": "Kwota"
+			},
+			"types": {
+				"monthlyRise": "Miesięczny wzrost",
+				"yearlyPlan": "Plan roczny"
+			}
+		}
+	},
+
+	"LanguageModal": {
+		"chooseLanguageRegion": {
+			"title": "Wybierz język i region",
+			"english": "Angielski",
+			"unitedStates": "Stany Zjednoczone",
+			"ukrainian": "Ukraiński",
+			"ukraine": "Ukraina",
+			"polish": "Polski",
+			"poland": "Polska"
+		},
+		"chooseCurrency": {
+			"title": "Wybierz walutę",
+			"americanDollar": "Dolar amerykański",
+			"ukrainianHryvnia": "Hrywna ukraińska",
+			"euro": "Euro"
+		},
+		"chooseCity": {
+			"title": "Wybierz miasto",
+			"city": "Miasto",
+			"cities": {
+				"newYork": "Nowy Jork",
+				"london": "Londyn",
+				"kyiv": "Kijów",
+				"poltava": "Połtawa",
+				"odessa": "Odessa",
+				"kharkiv": "Charków",
+				"warsaw": "Warszawa"
+			}
+		},
+		"errors": {
+			"failedToLoadCities": "Nie znaleziono miasta"
+		}
+	},
+
+	"LoginModal": {
+		"welcome": "Witamy",
+		"logInWith": "Zaloguj się za pomocą",
+		"terms": "Autoryzując akceptujesz warunki",
+		"privacyPolicy": "Polityka prywatności",
+		"userDataDeletion": "Usuwanie danych użytkownika"
+	},
+
+	"Notifications": {
+		"empty": "Obecnie nie masz żadnych powiadomień",
+		"types": {
+			"TRUST_RATING_CHANGED": {
+				"title": "Ocena zaufania",
+				"message": "Otrzymałeś podwyżkę poziomu zaufania: +{value}"
+			},
+			"BONUSES_CHANGED": {
+				"title": "Bonusy",
+				"message": "Na Twoje konto dodano {value} {units}"
+			},
+			"PLAN_CHANGED": {
+				"title": "Plan",
+				"message": "Twój plan {value} wygasa za 1 dzień"
+			},
+			"CLASSIFIED_ADDED": {
+				"title": "Ogłoszenia",
+				"message": "Pomyślnie opublikowano na stronie"
+			},
+			"CLASSIFIED_UPDATED": {
+				"title": "Ogłoszenia",
+				"message": "Twoje ogłoszenie zostało zaktualizowane"
+			},
+			"CLASSIFIED_DELETED": {
+				"title": "Ogłoszenia",
+				"message": "Twoje ogłoszenie zostało usunięte"
+			},
+			"CLASSIFIED_FAVORITED": {
+				"title": "Ogłoszenia",
+				"message": "Użytkownik dodał twoje ogłoszenie do ulubionych"
+			},
+			"MESSAGE_RECEIVED": {
+				"title": "Wiadomości",
+				"message": "Otrzymałeś nową wiadomość dla ogłoszenia"
+			},
+			"DEAL_PROPOSED": {
+				"title": "Ogłoszenia",
+				"message": "Zaproponowano transakcję dla twojego ogłoszenia"
+			},
+			"RULES_CHANGED": {
+				"title": "Zasady marketplace’u",
+				"message": "Zasady marketplace’u zostały zaktualizowane"
+			},
+			"OFFICIAL_NAME_CONFIRMED": {
+				"title": "Profil",
+				"message": "Twoje oficjalne imię zostało potwierdzone {value}"
+			}
+		}
+	},
+
+	"Filters": {
+		"price": "Cena",
+		"tags": "Tagi",
+		"sortByRegionAndCity": "Sortuj według regionu i miasta",
+		"sort": "Sortowanie",
+		"errorPrice": "Zakres cen nie jest dostępny",
+		"buttons": {
+			"firstNew": "Najpierw nowe",
+			"firstOld": "Najpierw stare",
+			"highPrice": "Wysoka cena",
+			"lowPrice": "Niska cena",
+			"apply": "Zastosuj"
+		}
+	},
+
+	"Buttons": {
+		"add": "Dodaj",
+		"favorites": "Ulubione",
+		"filters": "Filtry",
+		"notifications": "Powiadomienia",
+		"letsStart": "Zacznijmy",
+		"login": "Zaloguj się",
+		"next": "Następny",
+		"back": "Wstecz",
+		"publish": "Opublikuj",
+		"save": "Zapisz"
+	},
+
+	"Components": {
+		"mySpace": "Moja przestrzeń",
+		"placeholders": {
+			"search": "Szukaj",
+			"imLookingFor": "Szukam..."
+		},
+		"inputs": {
+			"error": "Osiągnięto limit znaków"
+		}
+	},
+	"DatePicker": {
+		"month": "Miesiąc",
+		"year": "Rok",
+		"months": {
+			"january": "Styczeń",
+			"february": "Luty",
+			"march": "Marzec",
+			"april": "Kwiecień",
+			"may": "Maj",
+			"june": "Czerwiec",
+			"july": "Lipiec",
+			"august": "Sierpień",
+			"september": "Wrzesień",
+			"october": "Październik",
+			"november": "Listopad",
+			"december": "Grudzień"
+		},
+		"monthsShort": {
+			"january": "Sty",
+			"february": "Lut",
+			"march": "Mar",
+			"april": "Kwi",
+			"may": "Maj",
+			"june": "Cze",
+			"july": "Lip",
+			"august": "Sie",
+			"september": "Wrz",
+			"october": "Paź",
+			"november": "Lis",
+			"december": "Gru"
+		},
+		"weekDays": {
+			"monday": "Pn",
+			"tuesday": "Wt",
+			"wednesday": "Śr",
+			"thursday": "Cz",
+			"friday": "Pt",
+			"saturday": "Sb",
+			"sunday": "Nd"
+		}
+	},
+	"Metadata": {
+		"title": "Marketplace do wymiany, sprzedaży i aukcji przedmiotów",
+		"description": "Uniwersalny marketplace do sprzedaży, wymiany i aukcji nowych i używanych rzeczy. Bezpiecznie, wygodnie i korzystnie — dołącz już teraz!"
+	}
+}
