@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
 			},
 			{
 				protocol: 'https',
-				hostname: 'u2m-space-backend-production.up.railway.app',
+				hostname: 'u2m-backend-production.up.railway.app',
 				pathname: '/public/**',
 			},
 			{
