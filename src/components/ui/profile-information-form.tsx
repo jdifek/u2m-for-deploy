@@ -204,8 +204,7 @@ export const ProfileInformationForm = ({
       formData.phoneNumber?.trim() !== '' &&
       !errors.nickname &&
       !errors.email &&
-      !errors.phoneNumber &&
-      !errors.avatarError &&
+      // !errors.avatarError &&
       !isLoading
     setIsSubmitDisabled(!isFormValid)
   }, [formData, errors, isLoading, setIsSubmitDisabled])
