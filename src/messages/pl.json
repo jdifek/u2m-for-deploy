@@ -166,7 +166,8 @@
 			"phoneNumber": "Numer telefonu",
 			"extraPhoneNumber": "Dodatkowy numer telefonu",
 			"month": "Miesiąc",
-			"year": "Rok"
+			"year": "Rok",
+      "countryCode": "Country Code"
 		},
 		"settingTooltips": {
 			"languageRegion": {

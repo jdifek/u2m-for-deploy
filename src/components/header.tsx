@@ -31,6 +31,7 @@ export const Header = () => {
 		useModal()
 	const { isPublishDisabled, submitForm } = useClassifiedForm()
 	const { isSubmitDisabled, submitForm: submitProfileForm } = useProfileForm()
+  console.log('ProfileFormContext:', { isSubmitDisabled, submitProfileForm })
 	const {
 		searchQuery,
 		setSearchQuery,

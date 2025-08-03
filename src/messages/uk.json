@@ -166,7 +166,8 @@
 			"phoneNumber": "Номер телефону",
 			"extraPhoneNumber": "Додатковий номер телефону",
 			"month": "Місяць",
-			"year": "Рік"
+			"year": "Рік",
+      "countryCode": "Country Code"
 		},
 		"settingTooltips": {
 			"languageRegion": {

@@ -60,17 +60,16 @@ export const ButtonCustom = ({
 		</>
 	)
 
-	const handleClick = (
-		e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>
-	) => {
-		console.log('ButtonCustom clicked:', { href })
-		onClick?.(e)
-		if (href && !e.defaultPrevented && href.startsWith('http')) {
-			console.log('Opening external URL:', href)
-			// Используем window.open для OAuth pop-up
-			window.open(href, '_blank', 'noopener,noreferrer,width=500,height=600')
-		}
-	}
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>
+  ) => {
+    console.log('ButtonCustom clicked, disabled:', disabled, 'event:', e.type);
+    onClick?.(e);
+    if (href && !e.defaultPrevented && href.startsWith('http')) {
+      console.log('Opening external URL:', href);
+      window.open(href, '_blank', 'noopener,noreferrer,width=500,height=600');
+    }
+  };
 
 	// Добавляем touchstart для мобильных
 	const handleTouchStart = (e: React.TouchEvent<HTMLAnchorElement>) => {

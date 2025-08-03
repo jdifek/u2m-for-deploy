@@ -3,6 +3,7 @@
 import {
   Dispatch,
   SetStateAction,
+  useCallback,
   useEffect,
   useLayoutEffect,
   useRef,
@@ -228,34 +229,35 @@ export const ProfileInformationForm = ({
     }
     return ''
   }
-
   const validatePhoneNumber = (value: string) => {
-    const cleanValue = value.replace(/\s/g, '')
+    const cleanValue = value.replace(/[^0-9+]/g, ''); // Удаляем все, кроме цифр и +
     if (!cleanValue) {
-      return tProfile('informationFormInputs.errorPhoneRequired')
+      return tProfile('informationFormInputs.errorPhoneRequired');
     }
     if (!cleanValue.startsWith('+')) {
-      return tProfile('informationFormInputs.errorPhoneNumber')
+      return tProfile('informationFormInputs.errorPhoneNumber');
     }
-    const digits = cleanValue.replace(/^\+/, '')
-    if (digits.length < 7) {
-      return tProfile('informationFormInputs.errorPhoneNumber')
+    const digits = cleanValue.replace(/^\+/, ''); // Удаляем +
+    const countryCode = cleanValue.startsWith('+380') ? '380' : digits.slice(0, digits.length - 9);
+    const phoneDigits = digits.slice(countryCode.length); // Извлекаем цифры номера
+    if (phoneDigits.length < 7) {
+      return tProfile('informationFormInputs.errorPhoneNumber');
     }
-    if (cleanValue.startsWith('+380') && digits.length !== 12) {
-      return tProfile('informationFormInputs.errorPhoneNumber')
+    if (cleanValue.startsWith('+380') && phoneDigits.length !== 9) {
+      return tProfile('informationFormInputs.errorPhoneNumber');
     }
-    return ''
-  }
+    return '';
+  };
 
   const getPhoneMask = (value: string, code: string) => {
     let cleanedValue = value.replace(/[^0-9]/g, '')
     if (!cleanedValue) return ''
     switch (code) {
       case '+380':
+        cleanedValue = cleanedValue.slice(0, 9); // Ограничиваем до 9 цифр
         if (cleanedValue.length >= 9) {
-          return cleanedValue.replace(/(\d{2})(\d{3})(\d{2})(\d{2})/, '$1 ($2) $3-$4')
+          return cleanedValue.replace(/(\d{2})(\d{3})(\d{2})(\d{2})/, '$1 ($2) $3-$4');
         }
-        return cleanedValue
       case '+48':
         if (cleanedValue.length >= 9) {
           return cleanedValue.replace(/(\d{3})(\d{3})(\d{3})/, '$1 $2 $3')
@@ -428,9 +430,10 @@ export const ProfileInformationForm = ({
     }
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsLoading(true)
+  const handleSubmit = useCallback(async (e?: React.FormEvent) => {
+    console.log('handleSubmit called with formData:', formData);
+    if (e) e.preventDefault();
+    setIsLoading(true);
     setErrors({
       nickname: '',
       email: '',
@@ -438,43 +441,49 @@ export const ProfileInformationForm = ({
       extraPhoneNumber: '',
       avatarError: '',
       server: '',
-    })
-
-    const nicknameError = validateNickname(formData.nickname)
-    const emailError = validateEmail(formData.email)
-    const phoneNumberError = validatePhoneNumber(formData.phoneCode + (formData.phoneNumber || '').replace(/\s/g, ''))
-
-    if (nicknameError || emailError || phoneNumberError) {
+    });
+  
+    const nicknameError = validateNickname(formData.nickname);
+    const emailError = validateEmail(formData.email);
+    const phoneNumberError = validatePhoneNumber(
+      formData.phoneCode + (formData.phoneNumber || '').replace(/[^0-9]/g, '') // Удаляем все, кроме цифр
+    );
+    const extraPhoneNumberError = formData.extraPhoneNumber
+      ? validatePhoneNumber(
+          formData.extraPhoneCode + (formData.extraPhoneNumber || '').replace(/[^0-9]/g, '')
+        )
+      : '';
+  
+    if (nicknameError || emailError || phoneNumberError || extraPhoneNumberError) {
+      console.log('Validation errors in handleSubmit:', {
+        nicknameError,
+        emailError,
+        phoneNumberError,
+        extraPhoneNumberError,
+        cleanedPhone: formData.phoneCode + (formData.phoneNumber || '').replace(/[^0-9]/g, ''),
+        cleanedExtraPhone: formData.extraPhoneNumber
+          ? formData.extraPhoneCode + (formData.extraPhoneNumber || '').replace(/[^0-9]/g, '')
+          : 'N/A',
+      });
       setErrors({
         nickname: nicknameError,
         email: emailError,
         phoneNumber: phoneNumberError,
-        extraPhoneNumber: '',
+        extraPhoneNumber: extraPhoneNumberError,
         avatarError: '',
         server: '',
-      })
-      setIsLoading(false)
-      return
+      });
+      setIsLoading(false);
+      return;
     }
-
-    if (!formData.email) {
-      setErrors({
-        ...errors,
-        email: tProfile('informationFormInputs.errorEmailRequired'),
-      })
-      setIsLoading(false)
-      return
+  
+    if (!user || !user.id) {
+      console.error('User or user.id is undefined:', user);
+      setErrors((prev) => ({ ...prev, server: tProfile('errors.userNotFound') }));
+      setIsLoading(false);
+      return;
     }
-
-    if (!formData.phoneNumber) {
-      setErrors({
-        ...errors,
-        phoneNumber: tProfile('informationFormInputs.errorPhoneRequired'),
-      })
-      setIsLoading(false)
-      return
-    }
-
+  
     try {
       const updateData: UpdateUserProfileData = {
         email: formData.email || undefined,
@@ -482,26 +491,20 @@ export const ProfileInformationForm = ({
         legalSurname: formData.surname || null,
         nickname: formData.nickname || undefined,
         phoneNumber: formData.phoneNumber
-          ? formData.phoneCode + formData.phoneNumber.replace(/\s/g, '')
+          ? formData.phoneCode + (formData.phoneNumber || '').replace(/[^0-9]/g, '')
           : undefined,
         extraPhoneNumber: formData.extraPhoneNumber
-          ? formData.extraPhoneCode + formData.extraPhoneNumber.replace(/\s/g, '')
+          ? formData.extraPhoneCode + (formData.extraPhoneNumber || '').replace(/[^0-9]/g, '')
           : null,
-        gender:
-          formData.gender === ''
-            ? null
-            : (formData.gender as 'Male' | 'Female'),
+        gender: formData.gender === '' ? null : (formData.gender as 'Male' | 'Female'),
         birthday: formData.birthday || null,
         avatar: formData.avatar || undefined,
         removeAvatar: formData.removeAvatar || undefined,
-      }
-
-      const updatedUser = await userService.updateUserProfile(
-        user!.id,
-        updateData
-      )
-      updateUser(updatedUser)
-
+      };
+      console.log('Sending updateData to server:', updateData);
+      const updatedUser = await userService.updateUserProfile(user.id, updateData);
+      console.log('Server response:', updatedUser);
+      updateUser(updatedUser);
       handleAuthSuccess(
         {
           user: updatedUser,
@@ -509,43 +512,25 @@ export const ProfileInformationForm = ({
           refreshToken: localStorage.getItem('refreshToken')!,
         },
         false
-      )
-
-      const { code: phoneCode, number: phoneNumber } = extractPhoneCodeAndNumber(updatedUser.phoneNumber)
-      const { code: extraPhoneCode, number: extraPhoneNumber } = extractPhoneCodeAndNumber(updatedUser.extraPhoneNumber || undefined)
-      setFormData({
-        nickname: updatedUser.nickname,
-        name: updatedUser.name || '',
-        surname: updatedUser.legalSurname || '',
-        gender: updatedUser.gender || '',
-        birthday: updatedUser.birthday || '',
-        email: updatedUser.email,
-        phoneNumber: phoneNumber,
-        phoneCode: phoneCode,
-        extraPhoneNumber: extraPhoneNumber,
-        extraPhoneCode: extraPhoneCode,
-        avatar: null,
-        removeAvatar: false,
-      })
-
-      router.replace('/selling-classifieds')
+      );
+      console.log('Redirecting to /selling-classifieds');
+      router.replace('/selling-classifieds');
     } catch (error: any) {
-      let errorMessage = tProfile('errors.serverError')
+      console.error('Server error in handleSubmit:', error, error.response?.data);
+      let errorMessage = tProfile('errors.serverError');
       if (error.response?.data?.error) {
-        if (error.response.data.error.includes('Failed to upload avatar')) {
-          errorMessage = tProfile('errors.avatarUploadFailed')
-        } else if (error.response.data.error.includes('Failed to remove avatar')) {
-          errorMessage = tProfile('errors.avatarRemoveFailed')
-        } else {
-          errorMessage = error.response.data.error
-        }
+        errorMessage = error.response.data.error;
       }
-      setErrors({ ...errors, server: errorMessage })
+      setErrors((prev) => ({ ...prev, server: errorMessage }));
+      alert(errorMessage); // Временное уведомление
     } finally {
-      setIsLoading(false)
+      setIsLoading(false);
     }
-  }
-
+  }, [formData, setErrors, setIsLoading, tProfile, user, updateUser, handleAuthSuccess, router]);
+  useEffect(() => {
+    setSubmitForm(() => handleSubmit)
+  }, [handleSubmit])
+  
   useLayoutEffect(() => {
     setSubmitForm(() => handleSubmit)
   }, [setSubmitForm, formData, user])
